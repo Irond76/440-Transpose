@@ -1,8 +1,8 @@
 <script>
   import { enterSite } from "./Stores/enterSiteStore";
-  import { scale, fade } from "svelte/transition";
   import Header from "./lib/Header.svelte";
   import Button from "./Buttons/Button.svelte";
+  import SelectKey from "./lib/SelectKey.svelte";
 </script>
 
 {#if $enterSite}
@@ -13,10 +13,6 @@
 {:else}
   <main class="main-container">
     <Header />
-    <div class="key-card-container" transition:fade={{ duration: 500 }}>
-      <div>
-        <h1>Content Goes Here</h1>
-      </div>
-    </div>
+    <SelectKey />
   </main>
 {/if}
