@@ -1,11 +1,8 @@
 <script>
-  import Button from "./lib/Button.svelte";
 </script>
 
 <main>
-  <div>
-    <Button />
-  </div>
+  <div />
   <div class="key-card-container">
     <div>
       <button>click me</button>
