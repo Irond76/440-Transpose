@@ -1,23 +1,14 @@
-<div class="key-card-container">
+<script>
+  import Button from "./lib/Button.svelte";
+</script>
+
+<main>
   <div>
-    <button>click me</button>
+    <Button />
   </div>
-  <div>
-    <button>click me</button>
+  <div class="key-card-container">
+    <div>
+      <button>click me</button>
+    </div>
   </div>
-  <div>
-    <button>click me</button>
-  </div>
-  <div>
-    <button>click me</button>
-  </div>
-  <div>
-    <button>click me</button>
-  </div>
-  <div>
-    <button>click me</button>
-  </div>
-  <div>
-    <button>click me</button>
-  </div>
-</div>
+</main>
