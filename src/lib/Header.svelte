@@ -1,5 +1,8 @@
 <div class="header-container">
-  <h1>440club.com</h1>
+  <a href="https://440club.com" target="_blank" rel="noopener noreferrer"
+    ><h1>440club.com</h1></a
+  >
+
   <hr />
   <h2>Tranpose Key</h2>
 </div>
@@ -18,5 +21,11 @@
     background-color: #e30074;
     height: 5px;
     border: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  h1:hover {
+    color: #f17fb9;
   }
 </style>
