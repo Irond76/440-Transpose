@@ -17,4 +17,7 @@
   <div>
     <button>click me</button>
   </div>
+  <div>
+    <button>click me</button>
+  </div>
 </div>
