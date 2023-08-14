@@ -3,7 +3,6 @@
 
   const toggleEnterSite = () => {
     enterSite.update((current) => {
-      console.log(current);
       return !current;
     });
   };

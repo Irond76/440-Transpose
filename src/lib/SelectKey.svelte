@@ -30,7 +30,7 @@
     </ParentKeyCard>
   </div>
   <div class="chord-number-container">
-    <ChordCards />
+    <ChordCards {key} />
   </div>
 {/if}
 
