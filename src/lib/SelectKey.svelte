@@ -1,6 +1,7 @@
 <script>
   import { fade } from "svelte/transition";
   import ParentKeyCard from "./ParentKeyCard.svelte";
+  import { chordNumbers } from "../Stores/chordLibraryStore";
   let key = "";
   $: parentKey = key;
 </script>

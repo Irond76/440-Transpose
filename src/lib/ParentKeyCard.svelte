@@ -12,4 +12,7 @@
     width: 6em;
     padding: 0.2em;
   }
+  p {
+    color: #cccccc;
+  }
 </style>

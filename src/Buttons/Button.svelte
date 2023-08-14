@@ -2,7 +2,6 @@
   import { enterSite } from "../Stores/enterSiteStore.js";
 
   const toggleEnterSite = () => {
-    console.log(enterSite);
     enterSite.update((current) => {
       console.log(current);
       return !current;
