@@ -10,7 +10,9 @@
   };
 </script>
 
-<button type="button" class="btn" on:click={toggleEnterSite}>Enter</button>
+<div class="Enter-Btn-Container">
+  <button type="button" class="btn" on:click={toggleEnterSite}>Enter</button>
+</div>
 
 <style>
   .btn {

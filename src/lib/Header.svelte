@@ -1,6 +1,8 @@
-<h1>440club.com</h1>
-<hr />
-<h2>Tranpose Key</h2>
+<div class="header-container">
+  <h1>440club.com</h1>
+  <hr />
+  <h2>Tranpose Key</h2>
+</div>
 
 <style>
   h1,
