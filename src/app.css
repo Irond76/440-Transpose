@@ -3,7 +3,7 @@
   line-height: 1.5;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #050505;
 }
 
 * {
@@ -13,17 +13,30 @@
 }
 
 #app {
-  
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+  border: 1px solid green;
+  height: 100dvh;
+  max-width: 1280px;
+  align-items: center;
 }
 
-button {
-  background-color: aqua;
+.Enter-Btn-Container {
+  padding: 2em;
+}
+
+
+.header-container {
+  /* border: 1px solid yellow; */
+
 }
 
 .key-card-container {
   border: 1px solid red;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  height: 60vh;
   width: 80vw;
   justify-items: center;
   align-items: center;
@@ -34,8 +47,7 @@ main {
   display: grid;
   grid-template-columns: 1fr ;
   justify-items: center;
-  height: 100vh;
-  max-width: 1280px;
+  width: 80vw;
   margin: 0 auto;
 }
 

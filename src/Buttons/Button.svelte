@@ -1,4 +1,16 @@
-<button type="button" class="btn">Enter</button>
+<script>
+  import { enterSite } from "../Stores/enterSiteStore.js";
+
+  const toggleEnterSite = () => {
+    console.log(enterSite);
+    enterSite.update((current) => {
+      console.log(current);
+      return !current;
+    });
+  };
+</script>
+
+<button type="button" class="btn" on:click={toggleEnterSite}>Enter</button>
 
 <style>
   .btn {
