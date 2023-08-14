@@ -1,5 +1,6 @@
 <script>
   import { fade } from "svelte/transition";
+  import ParentKeyCard from "./ParentKeyCard.svelte";
   let key = "";
   $: parentKey = key;
 </script>
@@ -21,9 +22,11 @@
   </select>
   <label for="parentKey">Select Parent Key</label>
 </div>
-{#if key}
+{#if parentKey}
   <div transition:fade={{ duration: 1000 }}>
-    <h1>{parentKey}</h1>
+    <ParentKeyCard>
+      <h1>{key}</h1>
+    </ParentKeyCard>
   </div>
 {/if}
 
