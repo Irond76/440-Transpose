@@ -1,7 +1,7 @@
 <script>
   import { fade } from "svelte/transition";
   import ParentKeyCard from "./ParentKeyCard.svelte";
-  import { chordNumbers } from "../Stores/chordLibraryStore";
+  import ChordCards from "./ChordCards.svelte";
   let key = "";
   $: parentKey = key;
 </script>
@@ -29,9 +29,19 @@
       <h1>{key}</h1>
     </ParentKeyCard>
   </div>
+  <div class="chord-number-container">
+    <ChordCards />
+  </div>
 {/if}
 
 <style>
+  .chord-number-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0.5em;
+    text-align: center;
+    width: 80dvw;
+  }
   div {
     padding: 2em;
   }
@@ -48,5 +58,16 @@
     color: #e30074;
     font-size: 1.2em;
     padding: 0.3em;
+  }
+
+  @media screen and (max-width: 500px) {
+    .chord-number-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      gap: 0.5em;
+      margin: 0 auto;
+      text-align: center;
+      width: 100dvw;
+    }
   }
 </style>
