@@ -36,7 +36,7 @@
       height: 6dvh;
       text-align: center;
       top: 4em;
-      right: 13em;
+      right: -2.5em;
     }
   }
 </style>
