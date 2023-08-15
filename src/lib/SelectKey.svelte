@@ -2,8 +2,32 @@
   import { fade } from "svelte/transition";
   import ParentKeyCard from "./ParentKeyCard.svelte";
   import ChordCards from "./ChordCards.svelte";
+  import TransposeUpButton from "../Buttons/TransposeUpButton.svelte";
+  import TransposeDownButton from "../Buttons/TransposeDownButton.svelte";
   let key = "";
-  $: parentKey = key;
+
+  const transposeUp = (e) => {
+    const keySelector = document.querySelector("select");
+    let index = keySelector.selectedIndex;
+    let length = keySelector.length;
+    index = (index + 1) % length;
+    keySelector.selectedIndex = index;
+    let value = keySelector.value;
+    key = value;
+    console.log(value);
+    console.log(key);
+  };
+  const transposeDown = () => {
+    const keySelector = document.querySelector("select");
+    let index = keySelector.selectedIndex;
+    let length = keySelector.length;
+    index = (index - 1 + length) % length;
+    keySelector.selectedIndex = index;
+    let value = keySelector.value;
+    key = value;
+    console.log(value);
+    console.log(key);
+  };
 </script>
 
 <div transition:fade={{ duration: 1000 }}>
@@ -11,7 +35,7 @@
     <option value="A">A</option>
     <option value="A#">A#</option>
     <option value="B">B</option>
-    <option value="C">C</option>
+    <option value="C" selected>C</option>
     <option value="C#">C#</option>
     <option value="D">D</option>
     <option value="D#">D#</option>
@@ -23,11 +47,13 @@
   </select>
   <label for="parentKey">Select Parent Key</label>
 </div>
-{#if parentKey}
+{#if key}
   <div transition:fade={{ duration: 1000 }}>
-    <ParentKeyCard>
+    <TransposeUpButton on:click={transposeUp} />
+    <ParentKeyCard {key}>
       <h1>{key}</h1>
     </ParentKeyCard>
+    <TransposeDownButton on:click={transposeDown} />
   </div>
   <div class="chord-number-container">
     <ChordCards {key} />
@@ -52,7 +78,6 @@
   }
 
   select {
-    /* border: 1px solid #e30074; */
     border: none;
     background-color: transparent;
     color: #e30074;

@@ -16,7 +16,6 @@
   display: grid;
   grid-template-columns: 1fr;
   margin: 0 auto;
-  border: 1px solid green;
   height: 100dvh;
   max-width: 1280px;
   align-items: center;
@@ -27,13 +26,9 @@
 }
 
 
-.header-container {
-  /* border: 1px solid yellow; */
 
-}
 
 .key-card-container {
-  border: 1px solid red;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   height: 60vh;
@@ -43,7 +38,6 @@
 }
 
 main {
-  border: 1px solid blue;
   display: grid;
   grid-template-columns: 1fr ;
   justify-items: center;

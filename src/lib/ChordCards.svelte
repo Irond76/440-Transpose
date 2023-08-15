@@ -1,5 +1,5 @@
 <script>
-  import { fade, scale } from "svelte/transition";
+  import { fade } from "svelte/transition";
   import { chordNumbers } from "../Stores/chordLibraryStore";
   import { modeNames } from "../Stores/chordLibraryStore";
   import { chordStore } from "../Stores/chordLibraryStore";

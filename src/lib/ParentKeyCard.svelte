@@ -1,6 +1,10 @@
+<script>
+  export let key;
+</script>
+
 <div class="Parent-Key-Card">
   <p>Key Of</p>
-  <slot />
+  <slot>{key}</slot>
 </div>
 
 <style>
