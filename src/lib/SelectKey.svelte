@@ -48,7 +48,7 @@
   <label for="parentKey">Select Parent Key</label>
 </div>
 {#if key}
-  <div transition:fade={{ duration: 1000 }}>
+  <div transition:fade={{ duration: 1000 }} class="btn-containers">
     <TransposeUpButton on:click={transposeUp} />
     <ParentKeyCard {key}>
       <h1>{key}</h1>
@@ -93,6 +93,9 @@
       margin: 0 auto;
       text-align: center;
       width: 100dvw;
+    }
+    .btn-containers {
+      position: relative;
     }
   }
 </style>

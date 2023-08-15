@@ -35,8 +35,8 @@
       width: 10dvw;
       height: 6dvh;
       text-align: center;
-      top: 20em;
-      left: 10em;
+      top: 4em;
+      left: 13em;
     }
   }
 </style>
